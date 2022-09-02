@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Coding Cohort 11
+        </h1>
+        <h2>
+            Tell us a little about yourselves!
+        </h2>
+    </header>
+    <main id="main-section">
+        <h3>Contact Information</h3>
+        <form>
+        <label for="Full Name">Full Name</label>
+        <input
+            type="text"
+            id="FullName"
+            name="fullname"
+            placeholder="Your Full Name Here..."
+            required />
+        <br>
+        <br>
+        <label for="Email">Email</label>
+        <input
+            type="email"
+            id="Email"
+            name="Email"
+            placeholder="Your Email Here..."
+            required/>
+        <br>
+        <br>
+        <label for="Birthday">Birthday</label>
+        <input
+            type="date"
+            id="Birthday"
+            name="Birthday"
+            required/>
+        <br>
+        <br>
+        <label for="PhoneNumber">Phone Number</label>
+        <input
+            type="tel"
+            id="PhoneNumber"
+            name="PhoneNumber"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required/>
+        </form>
+        <br>
+        <br>
+        <h2>Fun Facts!</h2>
+        <h4>Which do you prefer?</h4>
+        <form>
+            <input type="radio" name="cat_dog" checked>Cat</input>
+            <input type="radio" name="cat_dog">Dog</input>
+            <input type="radio" name="cat_dog">Iguana</input>
+            <input type="radio" name="cat_dog">Giraffe</input>
+            <br>
+            <br>
+        <h4>How many siblings do you have?</h4>
+            <input
+                type="number"
+                id="siblings"
+                name="siblings"
+                min="0"
+                max="14"/>
+        <br>
+        <br>
+        <h4>What is your experience level?</h4>
+            <label for="CodingXP">Coding Experience</label>
+            <select name="CodingExperience">
+                <option value="Novice">Novice</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Experienced">Experienced</option>
+                <option value="No Clue What Im Doing">No Clue What Im Doing</option>
+            </select>
+            <br>
+            <br>
+        <h4>Who is your favorite instructor? Select all that apply</h4>
+            <label for="Inst1">Osiel</label>
+            <input
+                type="checkbox"
+                id="Osiel"
+                name="Inst1"
+                value="Osiel"/>
+            <label for="Inst2">Isaac</label>
+            <input
+                type="checkbox"
+                id="Isaac"
+                name="Inst2"
+                value="Isaac"/>
+            <label for="Inst3">Justin</label>
+            <input
+                type="checkbox"
+                id="Justin"
+                name="Inst3"
+                value="Justin"/>
+            <br>
+            <br>
+            <h4>How is the apprentinceship going so far?</h4>
+            <textarea
+                id="TempCheck"
+                name="TempCheck"
+                placeholder="Your Progress..." >
+            </textarea>
+            <br>
+            <br>
+            <input type="submit" value="Submit" />
+        </form>
+    </main>
+</body>
+</html>
